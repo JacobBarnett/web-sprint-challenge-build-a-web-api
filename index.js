@@ -1,3 +1,6 @@
+const server = require("./api/server");
+server.listen(process.env.PORT || 9000);
+
 /*
 play this: https://www.youtube.com/watch?v=d-diB65scQU
 

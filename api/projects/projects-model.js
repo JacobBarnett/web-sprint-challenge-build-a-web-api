@@ -36,11 +36,11 @@ function get(id) {
   }
 }
 
-function insert(project) {
-  return db("projects")
-    .insert(project)
-    .then(([id]) => get(id));
-}
+  function insert(project) {
+    return db("projects")
+      .insert(project)
+      .then(([id]) => get(id));
+  }
 
 function update(id, changes) {
   return db("projects")

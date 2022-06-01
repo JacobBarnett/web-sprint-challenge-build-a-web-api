@@ -1,6 +1,7 @@
 const express = require("express");
 const projectsRouter = require("./projects/projects-router");
 const server = express();
+const actionsRouter = require("./actions/actions-router");
 
 server.use("/api/projects", projectsRouter, actionsRouter);
 // Configure your server here

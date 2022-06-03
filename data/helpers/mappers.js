@@ -20,9 +20,9 @@ function projectToBody(project) {
   };
 
   if (project.actions) {
-    result.actions = project.actions.map(action => ({
+    console.log(project.actions);
+    result.actions = project.actions.map((action) => ({
       ...action,
-      completed: intToBoolean(action.completed),
     }));
   }
 

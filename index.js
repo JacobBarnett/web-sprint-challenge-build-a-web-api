@@ -1,3 +1,10 @@
+const server = require("./server");
+
+const PORT = process.env.PORT || 9000;
+
+server.listen(PORT, () => {
+    console.log("🚀 Server running on http://localhost:${PORT}")
+});
 /*
 play this: https://www.youtube.com/watch?v=d-diB65scQU
 
